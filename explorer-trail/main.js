@@ -26,17 +26,17 @@ document.querySelector("#app").innerHTML = `
 </header>
 <main id="cards">
     ${createCard("24/11", "quinta", createGames("switzerland", "07:00", "cameroon")
-    + createGames("uruguay", "10:00", "south korea")
+  + createGames("uruguay", "10:00", "south korea")
   + createGames("portugal", "13:00", "ghana")
   + createGames("brazil", "16:00", "serbia"))}
-    ${createCard("28/11", "segunda", createGames("serbia", "07:00", "cameroon") 
+    ${createCard("28/11", "segunda", createGames("serbia", "07:00", "cameroon")
     + createGames("south korea", "10:00", "ghana")
     + createGames("brazil", "13:00", "switzerland")
-    + createGames("portugal", "16:00", "uruguay") )}
+    + createGames("portugal", "16:00", "uruguay"))}
     ${createCard("02/12", "sexta", createGames("south korea", "12:00", "portugal")
-    + createGames("ghana", "12:00", "uruguay") 
-    + createGames("serbia", "16:00", "switzerland") 
-    + createGames("brazil", "16:00", "cameroon"))} 
+      + createGames("ghana", "12:00", "uruguay")
+      + createGames("serbia", "16:00", "switzerland")
+      + createGames("brazil", "16:00", "cameroon"))} 
     
 </main>
 `;
