@@ -6,7 +6,6 @@ import { THEME } from './src/styles/theme';
 import { Loading } from './src/components/Loading';
 import { SingIn } from "./src/screens/SingIn";
 
-
 export default function App() { 
   const [fontsLoaded] = useFonts({ Roboto_400Regular, Roboto_500Medium, Roboto_700Bold})
 
