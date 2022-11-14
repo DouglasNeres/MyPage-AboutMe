@@ -1,7 +1,7 @@
 import Fastify from 'fastify'
 import cors from '@fastify/cors'
-import { z } from "zod";
-import ShortUniqueId from 'short-unique-id';
+import jwt from '@fastify/jwt'
+
 import { poolRoutes } from './routes/pool';
 import { gameRoutes } from './routes/game';
 import { userRoutes } from './routes/user';
@@ -17,6 +17,11 @@ async function bootstrap() {
     await fastify.register(cors, {
         origin: true,
     })
+    
+    await fastify.register(jwt, {
+        secret: 'nlwcopa',
+    })
+    
 
    await fastify.register(poolRoutes)
    await fastify.register(authRoutes)
